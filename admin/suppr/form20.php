@@ -2,6 +2,7 @@
     <head><title>Formulaire de saisie interne </title>
       <link rel="stylesheet" href="../../libs/bootstrap_sans_internet.css">
       <link rel="stylesheet" href="../../style/styleForm.css">
+      <link rel="icon" href="../NouveauLogoStan.png">
     </head>
     <body>
         <h1>Suppression de la liste (promotion entière)</h1>

@@ -2,6 +2,7 @@
     <head><title>Formulaire de saisie d'un nouvel interne</title>
 <link rel="stylesheet" href="../../libs/bootstrap_sans_internet.css">
 <link rel="stylesheet" href="../../style/styleForm.css">
+<link rel="icon" href="../NouveauLogoStan.png">
 
     </head>
     <body>
@@ -16,7 +17,7 @@
             Nom : <input class="form-control" type="text" name="Nom" placeholder="Nom"/> <br/>
 	          Prenom : <input class="form-control" type="text" name="Prenom" placeholder="Prénom"/> <br/>
             Classe : <input class="form-control" type="text" name="Classe" placeholder="Classe"/> <br/>
-            Place : <input type="text" class="form-control" name="Place" placeholder="Place"/><br/>
+            Place (conformément au plan) : <input type="text" class="form-control" name="Place" placeholder="Place"/><br/>
             Photo : <input type="file" class="btn btn-lg" name="upFile" id="upFile" accept=".png,.gif,.jpg,.webp" required>
 
             <div>
