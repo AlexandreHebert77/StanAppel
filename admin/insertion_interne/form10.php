@@ -17,10 +17,10 @@
 	          Prenom : <input class="form-control" type="text" name="Prenom" placeholder="Prénom"/> <br/>
             Classe : <input class="form-control" type="text" name="Classe" placeholder="Classe"/> <br/>
             Place : <input type="text" class="form-control" name="Place" placeholder="Place"/><br/>
-            Photo : <input type="file" name="upFile" id="upFile" accept=".png,.gif,.jpg,.webp" required>
+            Photo : <input type="file" class="btn btn-lg" name="upFile" id="upFile" accept=".png,.gif,.jpg,.webp" required>
 
             <div>
-            <input type="submit" value="valider">
+            <input type="submit" class="btn btn-lg" style="color:black; margin:10px" value="Valider">
             </div>
 
         </form>
