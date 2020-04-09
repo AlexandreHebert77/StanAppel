@@ -1,6 +1,6 @@
 <?php
             //On écrit un premier texte dans notre fichier
-  $date = date("m.d.y");
+  $date = date("d.m.y");
   $nomFichier = 'etude'.$date.'.txt';
   file_put_contents($nomFichier, 'ABSENT :');
 
@@ -19,9 +19,9 @@ $reponse->closeCursor();
 
 <?php
             //On écrit un premier texte dans notre fichier
-  $date = date("m.d.y");
+  $date = date("d.m.y");
   $nomFichier = 'etude'.$date.'.txt';
-  file_put_contents($nomFichier, "\nRETARD :", FILE_APPEND);
+  file_put_contents($nomFichier, "\n\nRETARD :", FILE_APPEND);
 
   $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');
 

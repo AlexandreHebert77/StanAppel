@@ -1,6 +1,6 @@
   <a class="btn btn-success btn-lg btn-block" href="CreationRapport.php" role="button"  style="margin-top:40px; margin-bottom:20px">Générer le rapport</a>
 <?php
-  $date = date("m.d.y");
+  $date = date("d.m.y");
   $nomFichier = 'etude'.$date.'.txt';
   echo '<a class="btn btn-success btn-lg btn-block" href="' . $nomFichier . '"download="'.$nomFichier.'" role="button"  style="margin-top:40px; margin-bottom:20px">Télécharger le rapport</a>';
 ?>
