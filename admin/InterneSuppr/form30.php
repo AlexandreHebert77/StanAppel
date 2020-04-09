@@ -4,7 +4,7 @@
       <link rel="stylesheet" href="../../style/styleForm.css">
     </head>
     <body>
-        <h1>Supretion d'un interne</h1>
+        <h1>Supression d'un interne</h1>
         <h2>Entrez les données demandées :</h2>
 
 <div class="formulaire">
