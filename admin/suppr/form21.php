@@ -6,4 +6,6 @@
     $stmt->execute();
 
     echo 'Les internes sont supprimés de la salle d\'étude';
+    header('Location:../suppr/form20.php');
+    exit();
 ?>

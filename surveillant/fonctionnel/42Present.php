@@ -1,0 +1,10 @@
+<?php
+ $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');
+       $Place=42;
+   $Etat='PRE';
+       $stmt = $pdo -> prepare('UPDATE `appel` SET `Etat`=:Etat WHERE `Place`=:Place');
+       $stmt->bindParam(':Place', $Place);
+       $stmt->bindParam(':Etat', $Etat);
+       $stmt->execute();
+       echo 'L\'interne souffre mais il fait ca bien';
+ ?>

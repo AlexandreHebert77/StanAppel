@@ -34,4 +34,7 @@ $reponse->closeCursor();
 
 $reponse->closeCursor();
 
+header('Location:../étude/étude.php
+');
+exit();
 ?>

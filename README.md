@@ -3,6 +3,7 @@
 
 INITIALISATION
 python requis
+WAMP 
 
 1) Création bdd
 
@@ -20,15 +21,10 @@ b) Remplir la table
 pip install pymysql
 éxécuter appelstan\py_pour_init\init.py
 
-2) Création fiche étude
+4) Relancer WAMP
 
-Exécuter les 3 scriptes python dans appelstan\surveillant\fonctionnel
-
-3) Relancer WAMP
-
-4) Création d'un virtuel host
+5) Création d'un virtuel host
 
 Accéder à 127.0.0.1
 cliquer sur "ajouter virtual host"
 suivre la procédure est séléctionner le fichier appelstan
-
