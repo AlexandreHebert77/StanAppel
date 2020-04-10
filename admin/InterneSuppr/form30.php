@@ -1,10 +1,12 @@
 <html>
-    <head><title>Formulaire de saisie interne </title>
+    <head>
+      <link rel="icon" href="../NouveauLogoStan.png">
+      <title>Formulaire de suppression interne </title>
       <link rel="stylesheet" href="../../libs/bootstrap_sans_internet.css">
       <link rel="stylesheet" href="../../style/styleForm.css">
     </head>
     <body>
-        <h1>Supretion d'un interne</h1>
+        <h1>Supression d'un interne</h1>
         <h2>Entrez les données demandées :</h2>
 
 <div class="formulaire">
