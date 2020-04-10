@@ -35,6 +35,62 @@ for n in range(1,225):
 
     monfichier = open(nomfichier, 'a')
     monfichier.write("\n $statement->execute();")
+
+    monfichier = open(nomfichier, 'a')
+    monfichier.write("\n  $request = 'SELECT Etat FROM appel WHERE Place="+str(n)+"';")
+    monfichier.close
+
+    monfichier = open(nomfichier, 'a')
+    monfichier.write("\n foreach ($pdo ->query($request) as $result){")
+    monfichier.close
+
+    monfichier.close
+    monfichier = open(nomfichier, 'a')
+    monfichier.write("\n if($result['Etat'] == 'PRE'){")
+    monfichier.close
+
+    monfichier = open(nomfichier, 'a')
+    monfichier.write("\n   $color = '#33FF44';")
+    monfichier.close
+
+    monfichier = open(nomfichier, 'a')
+    monfichier.write("\n }")
+    monfichier.close
+
+    monfichier = open(nomfichier, 'a')
+    monfichier.write("\n if($result['Etat'] == 'RET'){")
+    monfichier.close
+
+    monfichier = open(nomfichier, 'a')
+    monfichier.write("\n   $color = '#FFC133';")
+    monfichier.close
+
+    monfichier = open(nomfichier, 'a')
+    monfichier.write("\n }")
+    monfichier.close
+
+    monfichier = open(nomfichier, 'a')
+    monfichier.write("\n if($result['Etat'] == 'ABS'){")
+    monfichier.close
+
+    monfichier = open(nomfichier, 'a')
+    monfichier.write("\n   $color = '#D00B0B';")
+    monfichier.close
+
+    monfichier = open(nomfichier, 'a')
+    monfichier.write("\n }")
+    monfichier.close
+
+    monfichier = open(nomfichier, 'a')
+    monfichier.write("\n if($result['Etat'] == 'NOT'){")
+    monfichier.close
+
+    monfichier = open(nomfichier, 'a')
+    monfichier.write("\n   $color = '#FFFFFF';")
+    monfichier.close
+
+    monfichier = open(nomfichier, 'a')
+    monfichier.write("\n }")
     monfichier.close
 
     monfichier = open(nomfichier, 'a')
@@ -42,7 +98,11 @@ for n in range(1,225):
     monfichier.close
 
     monfichier = open(nomfichier, 'a')
-    monfichier.write("\n echo '<img src="+'"data:image/jpeg;base64,'+"'.base64_encode( $row['Image'] ).'"+'"/>'+"'"+";")
+    monfichier.write("\n echo '<img"+' style="border-color:'+"'.$color.'"+'"'+" src="+'"data:image/jpeg;base64,'+"'.base64_encode( $row['Image'] ).'"+'"border="3"/>'+"'"+";")
+    monfichier.close
+
+    monfichier = open(nomfichier, 'a')
+    monfichier.write("\n }")
     monfichier.close
 
     monfichier = open(nomfichier, 'a')

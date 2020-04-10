@@ -24,8 +24,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=1');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=1';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -38,8 +53,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=2');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=2';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -52,8 +82,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=3');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=3';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -66,8 +111,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=4');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=4';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -80,8 +140,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=5');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=5';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -94,8 +169,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=6');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=6';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -108,8 +198,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=7');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=7';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -122,8 +227,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=8');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=8';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -136,15 +256,27 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=9');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=9';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
-
-  </tr><tr>
-
-
+</tr><tr>
  <td><a href="10place.php">
  <img <?php
    $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');
@@ -153,8 +285,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=10');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=10';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -167,8 +314,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=11');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=11';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -181,8 +343,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=12');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=12';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -195,8 +372,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=13');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=13';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -209,8 +401,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=14');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=14';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -223,8 +430,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=15');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=15';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -237,8 +459,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=16');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=16';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -251,8 +488,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=17');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=17';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -265,14 +517,26 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=18');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=18';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
-
-
-  </tr><tr>
-
+ </tr><tr>
 
  <td><a href="19place.php">
  <img <?php
@@ -282,8 +546,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=19');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=19';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -296,8 +575,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=20');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=20';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -310,8 +604,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=21');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=21';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -324,8 +633,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=22');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=22';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -338,8 +662,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=23');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=23';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -352,8 +691,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=24');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=24';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -366,8 +720,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=25');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=25';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -380,8 +749,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=26');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=26';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -394,14 +778,26 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=27');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=27';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
-
-
-  </tr><tr>
-
+ </tr><tr>
 
  <td><a href="28place.php">
  <img <?php
@@ -411,8 +807,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=28');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=28';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -425,8 +836,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=29');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=29';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -439,8 +865,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=30');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=30';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -453,8 +894,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=31');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=31';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -467,8 +923,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=32');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=32';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -481,8 +952,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=33');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=33';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -495,8 +981,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=34');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=34';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -509,8 +1010,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=35');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=35';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -523,14 +1039,26 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=36');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=36';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
-
-  </tr><tr>
-
-
+ </tr><tr>
 
  <td><a href="37place.php">
  <img <?php
@@ -540,8 +1068,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=37');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=37';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -554,8 +1097,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=38');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=38';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -568,8 +1126,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=39');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=39';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -582,8 +1155,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=40');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=40';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -596,8 +1184,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=41');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=41';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -610,8 +1213,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=42');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=42';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -624,8 +1242,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=43');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=43';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -638,8 +1271,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=44');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=44';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -652,14 +1300,26 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=45');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=45';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
-
-  </tr><tr>
-
-
+ </tr><tr>
 
  <td><a href="46place.php">
  <img <?php
@@ -669,8 +1329,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=46');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=46';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -683,8 +1358,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=47');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=47';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -697,8 +1387,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=48');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=48';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -711,8 +1416,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=49');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=49';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -725,8 +1445,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=50');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=50';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -739,8 +1474,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=51');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=51';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -753,8 +1503,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=52');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=52';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -767,8 +1532,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=53');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=53';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -781,15 +1561,27 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=54');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=54';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
-
-  </tr><tr>
-
-
+ </tr><tr>
  <td><a href="55place.php">
  <img <?php
    $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');
@@ -798,8 +1590,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=55');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=55';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -812,8 +1619,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=56');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=56';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -826,8 +1648,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=57');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=57';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -840,8 +1677,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=58');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=58';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -854,8 +1706,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=59');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=59';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -868,8 +1735,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=60');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=60';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -882,8 +1764,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=61');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=61';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -896,8 +1793,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=62');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=62';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -910,14 +1822,26 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=63');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=63';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
-
-  </tr><tr>
-
-
+ </tr><tr>
 
  <td><a href="64place.php">
  <img <?php
@@ -927,8 +1851,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=64');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=64';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -941,8 +1880,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=65');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=65';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -955,8 +1909,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=66');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=66';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -969,8 +1938,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=67');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=67';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -983,8 +1967,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=68');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=68';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -997,8 +1996,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=69');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=69';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1011,8 +2025,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=70');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=70';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1025,8 +2054,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=71');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=71';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1039,14 +2083,26 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=72');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=72';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
-
-  </tr><tr>
-
-
+ </tr><tr>
 
  <td><a href="73place.php">
  <img <?php
@@ -1056,8 +2112,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=73');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=73';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1070,8 +2141,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=74');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=74';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1084,8 +2170,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=75');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=75';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1098,8 +2199,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=76');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=76';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1112,8 +2228,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=77');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=77';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1126,8 +2257,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=78');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=78';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1140,8 +2286,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=79');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=79';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1154,8 +2315,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=80');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=80';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1168,14 +2344,26 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=81');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=81';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
-
-  </tr><tr>
-
-
+ </tr><tr>
 
  <td><a href="82place.php">
  <img <?php
@@ -1185,8 +2373,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=82');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=82';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1199,8 +2402,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=83');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=83';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1213,8 +2431,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=84');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=84';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1227,8 +2460,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=85');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=85';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1241,8 +2489,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=86');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=86';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1255,8 +2518,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=87');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=87';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1269,8 +2547,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=88');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=88';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1283,8 +2576,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=89');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=89';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1297,14 +2605,26 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=90');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=90';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
-
-  </tr><tr>
-
-
+ </tr><tr>
 
  <td><a href="91place.php">
  <img <?php
@@ -1314,8 +2634,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=91');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=91';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1328,8 +2663,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=92');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=92';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1342,8 +2692,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=93');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=93';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1356,8 +2721,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=94');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=94';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1370,8 +2750,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=95');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=95';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1384,8 +2779,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=96');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=96';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1398,8 +2808,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=97');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=97';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1412,8 +2837,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=98');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=98';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1426,14 +2866,26 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=99');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=99';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
-
-  </tr><tr>
-
-
+ </tr><tr>
 
  <td><a href="100place.php">
  <img <?php
@@ -1443,8 +2895,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=100');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=100';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1457,8 +2924,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=101');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=101';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1471,8 +2953,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=102');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=102';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1485,8 +2982,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=103');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=103';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1499,8 +3011,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=104');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=104';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1513,8 +3040,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=105');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=105';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1527,8 +3069,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=106');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=106';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1541,8 +3098,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=107');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=107';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1555,14 +3127,26 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=108');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=108';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
-
-  </tr><tr>
-
-
+ </tr><tr>
 
  <td><a href="109place.php">
  <img <?php
@@ -1572,8 +3156,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=109');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=109';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1586,8 +3185,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=110');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=110';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1600,8 +3214,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=111');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=111';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1614,8 +3243,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=112');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=112';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1628,8 +3272,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=113');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=113';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1642,8 +3301,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=114');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=114';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1656,8 +3330,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=115');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=115';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1670,8 +3359,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=116');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=116';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1684,15 +3388,27 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=117');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=117';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
-  </tr><tr>
-
-
-
+ </tr><tr>
  <td><a href="118place.php">
  <img <?php
    $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');
@@ -1701,8 +3417,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=118');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=118';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1715,8 +3446,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=119');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=119';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1729,8 +3475,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=120');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=120';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1743,8 +3504,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=121');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=121';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1757,8 +3533,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=122');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=122';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1771,8 +3562,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=123');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=123';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1785,8 +3591,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=124');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=124';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1799,8 +3620,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=125');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=125';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1813,14 +3649,26 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=126');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=126';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
-
-  </tr><tr>
-
-
+ </tr><tr>
 
  <td><a href="127place.php">
  <img <?php
@@ -1830,8 +3678,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=127');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=127';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1844,8 +3707,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=128');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=128';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1858,8 +3736,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=129');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=129';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1872,8 +3765,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=130');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=130';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1886,8 +3794,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=131');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=131';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1900,8 +3823,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=132');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=132';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1914,8 +3852,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=133');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=133';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1928,8 +3881,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=134');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=134';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1942,14 +3910,26 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=135');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=135';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
-
-
-  </tr><tr>
-
+ </tr><tr>
 
  <td><a href="136place.php">
  <img <?php
@@ -1959,8 +3939,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=136');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=136';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1973,8 +3968,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=137');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=137';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -1987,8 +3997,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=138');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=138';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2001,8 +4026,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=139');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=139';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2015,8 +4055,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=140');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=140';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2029,8 +4084,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=141');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=141';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2043,8 +4113,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=142');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=142';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2057,8 +4142,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=143');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=143';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2071,14 +4171,26 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=144');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=144';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
-
-  </tr><tr>
-
-
+ </tr><tr>
 
  <td><a href="145place.php">
  <img <?php
@@ -2088,8 +4200,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=145');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=145';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2102,8 +4229,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=146');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=146';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2116,8 +4258,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=147');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=147';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2130,8 +4287,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=148');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=148';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2144,8 +4316,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=149');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=149';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2158,8 +4345,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=150');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=150';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2172,8 +4374,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=151');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=151';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2186,8 +4403,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=152');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=152';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2200,15 +4432,27 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=153');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=153';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
-
-  </tr><tr>
-
-
+ </tr><tr>
  <td><a href="154place.php">
  <img <?php
    $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');
@@ -2217,8 +4461,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=154');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=154';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2231,8 +4490,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=155');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=155';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2245,8 +4519,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=156');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=156';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2259,8 +4548,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=157');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=157';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2273,8 +4577,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=158');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=158';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2287,8 +4606,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=159');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=159';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2301,8 +4635,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=160');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=160';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2315,8 +4664,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=161');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=161';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2329,14 +4693,26 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=162');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=162';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
-
-
-  </tr><tr>
-
+ </tr><tr>
 
  <td><a href="163place.php">
  <img <?php
@@ -2346,8 +4722,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=163');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=163';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2360,8 +4751,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=164');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=164';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2374,8 +4780,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=165');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=165';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2388,8 +4809,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=166');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=166';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2402,8 +4838,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=167');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=167';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2416,8 +4867,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=168');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=168';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2430,8 +4896,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=169');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=169';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2444,8 +4925,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=170');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=170';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2458,15 +4954,27 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=171');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=171';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
-
-  </tr><tr>
-
-
+ </tr><tr>
  <td><a href="172place.php">
  <img <?php
    $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');
@@ -2475,8 +4983,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=172');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=172';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2489,8 +5012,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=173');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=173';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2503,8 +5041,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=174');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=174';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2517,8 +5070,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=175');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=175';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2531,8 +5099,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=176');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=176';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2545,8 +5128,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=177');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=177';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2559,8 +5157,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=178');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=178';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2573,8 +5186,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=179');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=179';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2587,14 +5215,26 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=180');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=180';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
-
-  </tr><tr>
-
-
+ </tr><tr>
 
  <td><a href="181place.php">
  <img <?php
@@ -2604,8 +5244,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=181');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=181';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2618,8 +5273,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=182');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=182';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2632,8 +5302,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=183');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=183';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2646,8 +5331,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=184');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=184';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2660,8 +5360,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=185');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=185';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2674,8 +5389,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=186');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=186';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2688,8 +5418,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=187');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=187';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2702,8 +5447,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=188');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=188';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2716,14 +5476,26 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=189');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=189';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
-
-  </tr><tr>
-
-
+ </tr><tr>
 
  <td><a href="190place.php">
  <img <?php
@@ -2733,8 +5505,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=190');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=190';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2747,8 +5534,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=191');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=191';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2761,8 +5563,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=192');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=192';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2775,8 +5592,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=193');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=193';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2789,8 +5621,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=194');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=194';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2803,8 +5650,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=195');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=195';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2817,8 +5679,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=196');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=196';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2831,8 +5708,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=197');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=197';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2845,14 +5737,26 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=198');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=198';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
-
-  </tr><tr>
-
-
+ </tr><tr>
 
  <td><a href="199place.php">
  <img <?php
@@ -2862,8 +5766,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=199');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=199';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2876,8 +5795,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=200');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=200';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2890,8 +5824,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=201');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=201';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2904,8 +5853,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=202');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=202';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2918,8 +5882,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=203');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=203';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2932,8 +5911,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=204');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=204';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2946,8 +5940,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=205');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=205';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2960,8 +5969,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=206');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=206';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -2974,15 +5998,27 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=207');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=207';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
-
-  </tr><tr>
-
-
+ </tr><tr>
  <td><a href="208place.php">
  <img <?php
    $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');
@@ -2991,8 +6027,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=208');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=208';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -3005,8 +6056,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=209');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=209';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -3019,8 +6085,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=210');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=210';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -3033,8 +6114,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=211');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=211';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -3047,8 +6143,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=212');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=212';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -3061,8 +6172,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=213');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=213';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -3075,8 +6201,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=214');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=214';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -3089,8 +6230,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=215');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=215';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -3103,14 +6259,26 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=216');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=216';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
-
-  </tr><tr>
-
-
+ </tr><tr>
 
  <td><a href="217place.php">
  <img <?php
@@ -3120,8 +6288,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=217');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=217';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -3134,8 +6317,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=218');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=218';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -3148,8 +6346,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=219');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=219';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -3162,8 +6375,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=220');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=220';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -3176,8 +6404,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=221');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=221';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -3190,8 +6433,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=222');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=222';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -3204,8 +6462,23 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=223');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=223';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
@@ -3218,8 +6491,51 @@
  $content = "";
  $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=224');
  $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=224';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
  while ($row = $statement->fetch()) {
- echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"/>';
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
+ }
+ ?></td>
+
+ <td><a href="225place.php">
+ <img <?php
+   $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');
+ $request = 'SELECT * FROM `appel` WHERE `Place`=225';
+ $counter = 0;
+ $content = "";
+ $statement = $pdo->prepare('SELECT `Image` FROM `appel` WHERE `Place`=224');
+ $statement->execute();
+  $request = 'SELECT Etat FROM appel WHERE Place=225';
+ foreach ($pdo ->query($request) as $result){
+ if($result['Etat'] == 'PRE'){
+   $color = '#33FF44';
+ }
+ if($result['Etat'] == 'RET'){
+   $color = '#FFC133';
+ }
+ if($result['Etat'] == 'ABS'){
+   $color = '#D00B0B';
+ }
+ if($result['Etat'] == 'NOT'){
+   $color = '#FFFFFF';
+ }
+ while ($row = $statement->fetch()) {
+ echo '<img style="border-color:'.$color.'" src="data:image/jpeg;base64,'.base64_encode( $row['Image'] ).'"border="3"/>';
+ }
  }
  ?></td>
 
