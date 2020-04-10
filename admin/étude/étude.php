@@ -1,7 +1,15 @@
   <a class="btn btn-success btn-lg btn-block" href="CreationRapport.php" role="button"  style="margin-top:40px; margin-bottom:20px">Générer le rapport</a>
 <?php
-  $date = date("d.m.y");
-  $nomFichier = 'etude'.$date.'.txt';
+$date = date("d.m.y");
+$heure = (int)date("h");
+if($heure <= 20)
+{
+  $numéro = "1ere";
+}
+else {
+  $numéro = "2eme";
+}
+$nomFichier = $numéro.'_etude_'.$date.'.txt';
   echo '<a class="btn btn-success btn-lg btn-block" href="' . $nomFichier . '"download="'.$nomFichier.'" role="button"  style="margin-top:40px; margin-bottom:20px">Télécharger le rapport</a>';
 ?>
 <table>
