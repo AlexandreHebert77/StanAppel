@@ -16,7 +16,15 @@ $nomFichier = $numéro.'_etude_'.$date.'.txt';
 <tr>
   <td>
 
-<strong>ABSENT</strong> :
+  <strong>ABSENT</strong> :
+</td>
+<td>
+  <strong>RETARD</strong> :
+</td>
+</tr>
+<tr>
+  <td>
+
 <?php
 
     $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');
@@ -40,7 +48,7 @@ $nomFichier = $numéro.'_etude_'.$date.'.txt';
 
   </td>
   <td>
-    <strong>RETARD</strong> :
+
     <?php
 
         $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');
