@@ -3,13 +3,13 @@
 
 INITIALISATION
 python requis
-WAMP 
+WAMP
 
 1) Création bdd
 
-id mysql 'root' ''
+id mysql 'root' 'root'
 
-a) Créer la table
+a) Créer la table 'appel'
 Nom		varchar(20)
 Prenom		varchar(20)
 Classe		varchar(5)

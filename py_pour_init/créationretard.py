@@ -10,7 +10,7 @@ for n in range(1,225):
 	monfichier.close
 
 	monfichier = open(nomfichier, 'a')
-	monfichier.write("\n $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');")
+	monfichier.write("\n $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', 'root');")
 	monfichier.close
 
 	monfichier = open(nomfichier, 'a')

@@ -12,7 +12,7 @@
   $nomFichier = $numéro.'_etude_'.$date.'.txt';
   file_put_contents($nomFichier, 'ABSENT :');
 
-  $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');
+  $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', 'root');
 
   $reponse = $pdo->query("SELECT * FROM `appel` WHERE Etat='ABS'");
   while ($donnees = $reponse->fetch())
@@ -39,7 +39,7 @@ $reponse->closeCursor();
             $nomFichier = $numéro.'_etude_'.$date.'.txt';
   file_put_contents($nomFichier, "\n\nRETARD :", FILE_APPEND);
 
-  $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');
+  $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', 'root');
 
   $reponse = $pdo->query("SELECT * FROM `appel` WHERE Etat='RET'");
   while ($donnees = $reponse->fetch())

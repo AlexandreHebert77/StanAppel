@@ -1,5 +1,5 @@
 <?php
- $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');
+ $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', 'root');
        $Place=102;
    $Etat='PRE';
        $stmt = $pdo -> prepare('UPDATE `appel` SET `Etat`=:Etat WHERE `Place`=:Place');

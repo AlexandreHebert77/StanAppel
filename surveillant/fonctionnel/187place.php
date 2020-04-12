@@ -16,7 +16,7 @@
    <body id="body">
  
  <h1><?php
-      $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');
+      $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', 'root');
       $request = 'SELECT * FROM `appel` WHERE `Place`=187';
           foreach ($pdo ->query($request) as $result){
              echo $result['Nom']. ' '. $result['Prenom'];
@@ -24,14 +24,14 @@
  	     ?></h1>
  
  <p><?php
-     $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');
+     $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', 'root');
          $request = 'SELECT * FROM `appel` WHERE `Place`=187';
       foreach ($pdo ->query($request) as $result){
          echo $result['Classe'];
       }
       ?> </p>
      <img <?php
-     $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');
+     $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', 'root');
      $request = 'SELECT * FROM `appel` WHERE `Place`=187';
      $counter = 0;
       $content = "";

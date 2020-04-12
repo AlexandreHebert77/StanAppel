@@ -1,5 +1,5 @@
 <?php
-$pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');
+$pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', 'root');
 
       $Nom=$_POST['Nom'];
       $Prenom=$_POST['Prenom'];

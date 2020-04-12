@@ -3,7 +3,7 @@
 
   <?php
 
-      $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', '');
+      $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', 'root');
 
       $stmt = $pdo -> prepare("UPDATE `appel` SET Etat='ABS' WHERE Etat != 'NOT'");
 

@@ -1,1 +1,0 @@
-lancer les 3 programmes python pour initialiser la salle d'étude
