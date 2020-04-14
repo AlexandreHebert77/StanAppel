@@ -6,7 +6,7 @@
 
     </head>
     <body>
-        <h1>Changement de mot de passe prefecture</h1>
+        <h1>Changement de mot de passe préfecture</h1>
         <!-- <div class="imgLogo"><img src="../../img/logoStanTransp.png" alt="logo"></div> -->
         <h2>Entrez les données demandées :</h2>
 

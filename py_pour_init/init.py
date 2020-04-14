@@ -5,7 +5,7 @@ connection = pymysql.connect(host='localhost',
                              user='root',
                              password='root',
                              db='ETUDE',
-                             port=3308,
+                             port=8889,
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor)
 
