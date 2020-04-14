@@ -5,7 +5,7 @@
       <link rel="icon" href="../NouveauLogoStan.png">
     </head>
     <body>
-        <h1>Suppression de la liste (promotion entière)</h1>
+        <h1>Suppression de la liste entière</h1>
         <h2>/!\ Cela est définitif /!\</h2>
         <form name="Etude" method="post" action="form21.php">
             <input type="submit" class="btn btn-lg" name="valider" style="color:black;" value="Suppression de la liste"/>
