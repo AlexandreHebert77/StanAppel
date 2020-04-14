@@ -17,7 +17,11 @@ Place		int(5)
 Etat		varchar(4)
 Image		blob
 
-b) Remplir la table
+b) Créer la table 'connexion'
+identifiant varchar(20)
+passwd varchar(120)
+
+c) Remplir la table
 pip install pymysql
 éxécuter appelstan\py_pour_init\init.py
 

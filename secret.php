@@ -13,22 +13,36 @@ appelstan1920@gmail.com
     </head>
     <body>
 
-        <?php
-    if (isset($_POST['mot_de_passe']) AND $_POST['identifiant'] == "surveillant" AND $_POST['mot_de_passe'] ==  "surveillant") // Si le mot de passe est bon
-    {
-      header('Location:surveillant/fonctionnel/salle.php ');
-    exit();//redirection vers appel
-    }
-    if (isset($_POST['mot_de_passe']) AND $_POST['identifiant'] == "prefecture" AND $_POST['mot_de_passe'] ==  "prefecture")  // Si le mot de passe est bon
-    {
-      header('Location:admin/menu.html');
-    exit();
-    //redirection vers admin
-    }
-    else // Sinon, on affiche un message d'erreur
-    {
-        echo '<p>Mot de passe incorrect</p>';
-    }
+      <?php
+
+          $pdo = new PDO('mysql:host=localhost;port=3308; dbname=ETUDE', 'root', 'root');
+          $ID = $_POST['identifiant'];
+          $sql = "SELECT * FROM `connexion` WHERE `identifiant`='".$ID."'";
+          echo $sql;
+          $stmt = $pdo -> query($sql);
+          $result = $stmt->fetch();
+
+          $passwd_crypt = $result['passwd'];
+          $donnees_crypt = crypt($_POST['mot_de_passe'], '$6$rounds=5000$usesomesillystringforsalt$');
+          echo $passwd_crypt;
+          echo $donnees_crypt;
+
+          if ($ID == 'surveillant' AND $donnees_crypt == $passwd_crypt)
+          {
+            echo ok;
+            header('Location:surveillant/fonctionnel/salle.php ');
+            exit();
+          }
+          if ($ID == 'prefecture' AND $donnees_crypt == $passwd_crypt)
+           {
+            header('Location:admin/menu.html');
+            exit();
+          }
+          else // Sinon, on affiche un message d'erreur
+          {
+            echo '<p>Mot de passe incorrect</p>';
+          }
+
     ?>
 
 
