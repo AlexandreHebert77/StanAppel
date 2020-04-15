@@ -21,6 +21,10 @@ b) Créer la table 'connexion'
 identifiant varchar(20)
 passwd varchar(120)
 
+c) Créer la table 'precochage'
+Jour varchar(3)
+Place varchar(3)
+
 c) Remplir la table
 pip install pymysql
 éxécuter appelstan\py_pour_init\init.py
